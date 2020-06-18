@@ -1,0 +1,164 @@
+.gpclear{
+	clear:both;
+	}
+
+.messages{
+	position:absolute;
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	z-index:11010;
+	height:0;
+	overflow:visible;
+	margin-top:-1px;
+}
+.messages *{
+	text-align:left;
+	margin:0;
+	padding:0;
+	font-weight:normal;
+	color:#333;
+	}
+.messages > div{
+	position:relative;
+	width:700px;
+	margin:0 auto;
+	display:block;
+	background-color:#fcefa1;
+	border:1px solid #bfb178;
+	-moz-border-radius: 0 0 7px 7px;
+	-webkit-border-radius: 0 0 7px 7px;
+	-o-border-radius: 0 0 7px 7px;
+	border-radius:0 0 7px 7px;
+	color:#444;
+	max-height:250px;
+	overflow:auto;
+	overflow-x:visible;
+	overflow-y:auto;
+}
+.messages ul{
+	margin:0;
+	padding:4px 2em 4px 2em;
+	}
+.messages li{
+	list-style:none;
+	padding:0;
+	margin:0;
+	font-size:12px;
+	font-family:Arial, sans-serif;
+	font-family: "Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
+	line-height:normal;
+	line-height: 18px;
+	text-decoration:none;
+	}
+.messages li li{
+	list-style:disc;
+	margin-left:2em;
+	}
+.messages a.close_message{
+	position:absolute;
+	text-decoration:none !important;
+	font-weight:bold !important;
+	color:#666 !important;
+	font-size:17px !important;
+	display:none;
+
+	top:1px;
+	right:1px;
+	padding:3px 4px;
+	height:16px;
+	width:16px;
+	background: url('../imgs/cancel.png') 50% 50% no-repeat;;
+	}
+
+.messages a{
+	color:#111 !important;
+	text-decoration:underline !important;
+	}
+
+
+
+
+.contactform ul{
+	margin:0;
+	width:50%;
+}
+.contactform li{
+	list-style:none;
+	padding:10px 0;
+	clear:both
+}
+.contactform li label{
+	font-size:12px;
+	padding:2px 0;
+	float:left
+}
+.contactform input,.contactform textarea{
+	float:right;
+	width:65%;
+	padding:5px;
+}
+.contactform textarea{
+	height:180px!important
+}
+.contactform .submit{
+	width:70%;
+}
+
+
+.IE7CLASS .req_script,
+.STCLASS .req_script{
+	display:block !important; /* needs to be block and not inherit for IE */
+}
+
+.IE7CLASS .without_script,
+.STCLASS .without_script{
+	display:none !important;
+}
+
+
+.siteinfo{
+	font-size:85%;
+}
+.siteinfo a{
+	text-decoration:none;
+	}
+.siteinfo li{
+	list-style:none;
+}
+
+.clear{clear:both;}
+
+.sitemap_xml{
+	float:right;
+	}
+
+
+
+/*
+	clearfix for editable_area heights
+	see http://www.positioniseverything.net/easyclearing.html
+		http://www.quirksmode.org/css/clearing.html
+*/
+
+/* CSS2... doesn't work for IE7 */
+div.GPAREA:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	}
+
+/* for IE7... does not validate */
+div.GPAREA{
+	zoom: 1;
+	}
+
+/* for testing
+div.GPAREA{border:1px solid #ccc;} */
+
+.cf:before,.cf:after{content:"";display:table}
+.cf:after{clear:both}
+.cf{zoom:1}
